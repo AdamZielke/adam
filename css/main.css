@@ -1,0 +1,795 @@
+/* ==========================================================================
+   MINEnEXT
+      by BartekPob
+            W razie pytań lub problemów:
+                 GG:768354
+                 E-Mail: bartekpob123@gmail.com
+
+
+    IKONY: FontAwesome
+            http://fortawesome.github.io/Font-Awesome/
+   ========================================================================== */
+
+@import url('font-awesome.css');
+
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url("fonts/SourceSansPro-Regular.otf");
+}
+@font-face {
+    font-family: SourceSansPro-Semibold;
+    src: url("fonts/SourceSansPro-Semibold.otf");
+}
+@font-face {
+    font-family: SourceSansPro-Light;
+    src: url("fonts/SourceSansPro-Light.otf");
+}
+@font-face {
+    font-family: SourceSansPro-Bold;
+    src: url("fonts/SourceSansPro-Bold.otf");
+}
+@font-face {
+    font-family: SourceSansPro-ExtraLight;
+    src: url("fonts/SourceSansPro-ExtraLight.otf");
+}
+@font-face {
+    font-family: BebasNeue;
+    src: url("fonts/BebasNeue.otf");
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background: #ebebeb;
+}
+
+
+::-moz-selection { background: #ec8104;}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    font: 16px/26px SourceSansPro-Regular, Arial;
+}
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    Szablon
+   =================== */
+
+.main-container, .main-container-page {
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+
+.header-container,
+.footer-container {
+    background: #252525;
+}
+
+.title {
+    background:url('img/logo.png');
+    width:180px;
+    height:50px;
+    margin-top: 20px;
+    /*TRANSFORMACJA*/
+    -moz-transition: 0.3s ease-in-out;  
+    -webkit-transition: 0.3s ease-in-out;  
+    -o-transition: 0.3s ease-in-out;  
+    transition: 0.3s ease-in-out;
+}
+
+.title:hover{
+    background-position: left bottom;
+}
+
+.padding{
+    padding: 20px;
+}
+
+
+.opinion{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.opinion h3{
+    font-size: 20px;
+}
+.opinion p{margin-top: -10px; color: #2c2c2c; font-weight: bold;}
+.opinion b{color: #c9c9c9;font-family: SourceSansPro-ExtraLight; display: block; margin-top: -10px; font-size: 15px}
+.opinion .fa-quote-left{color:#7a7a7a;}
+
+
+
+/* ===============
+    IE Fixes
+   =============== */
+
+.ie7 .title { padding-top: 20px;}
+
+
+/* ==============
+   Info box na max 768
+   =============== */
+.max768{
+    width: 90%;
+    background: #fff;
+    padding: 1px 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: solid 2px #d3d3d3;
+    text-align: center;
+   }
+/* =============
+    Buttony
+   ============== */
+
+.button {
+    background-color:#ec8104;
+    border-bottom:3px solid #a65900;
+    border-top: 1px solid #fdc17a;
+    color:#fff;
+    font-family: BebasNeue;
+    letter-spacing: 1px;
+    font-size:25px;
+    padding:10px 15px;
+    text-decoration:none;
+    text-shadow:0px 2px 2px #7e4400;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    margin: 3px 3px;
+    display: inline-block;
+    /*TRANSFORMACJA*/
+    -moz-transition: 0.5s ease-in-out;  
+    -webkit-transition: 0.5s ease-in-out;  
+    -o-transition: 0.5s ease-in-out;  
+    transition: 0.5s ease-in-out;
+}
+.button:hover { background-color:#f89306;}
+.button:active {position:relative; top:1px;}
+
+.style2{
+    background-color:#252525;
+    border-bottom:3px solid #111111;
+    border-top: 1px solid #000;
+    text-shadow:0px 2px 2px #7a7a7a;
+}
+.style2:hover{background-color:#383838;}
+
+.style3{
+    background-color:#dbdbdb;
+    border-bottom:3px solid #a3a3a3;
+    border-top: 1px solid #fff;
+    text-shadow:0px 2px 2px #7a7a7a;
+    color: #252525;
+}
+.style3:hover{background-color:#ebebeb;}
+
+.big-button{
+    padding: 10px 10%;
+}
+
+/* =============
+    InfoBar
+   ============== */
+
+.infobar{
+    background: #ebebeb;
+    border-bottom: solid 1px #d3d3d3;
+    border-top: solid 1px #d3d3d3;
+    border-left: solid 6px #ec8104;
+    border-right: solid 1px #d3d3d3;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.infobar h1{padding-right: 10px;font-size: 26px; font-family: SourceSansPro-Bold;line-height: 0.1;}
+.infobar h2{font-size: 17px; font-family: SourceSansPro-Light;line-height: 1;}
+    
+.infoleft{float: left; text-align: right;}
+.inforight{ float: left; margin-top: 5px;}
+    
+.infowrapper{margin: 0 auto; margin-left: 12%;}
+
+/* =============
+    About
+   ============== */
+
+.about{
+    margin-top: 30px;
+}
+
+/* =============
+    Forms
+   ============== */
+    
+input, textarea {
+    border: 1px solid #d0d0d0; 
+    padding: 10px;
+    background: #ebebeb;
+    font-family: SourceSansPro-Light;
+    font-size: 17px;
+}
+input[type=submit],[type=reset]{
+    font-family: SourceSansPro-ExtraLight; 
+    color: #222;
+    height: 43px;
+    margin-top: 3px;
+}
+
+input:hover{
+    background: #f3f3f3;
+}
+
+
+/* =============
+    Social
+   ============== */
+
+.social h1{font-size: 20px; font-family: SourceSansPro-ExtraLight;line-height: 0.1; color: #111111; margin-bottom: 15px;}
+.social {text-align: center; }
+
+.social a {text-decoration: none; color: #111111; margin: 0 2%;
+    /*TRANSFORMACJA*/
+    -moz-transition: 0.3s ease-in;  
+    -webkit-transition: 0.3s ease-in;  
+    -o-transition: 0.3s ease-in;  
+    transition: 0.3s ease-in; 
+}
+
+.skype:hover{color:#02aae8; text-shadow: 0px 1px 2px #000;}
+.facebook:hover{color:#3b5a9b; text-shadow: 0px 1px 2px #000;}
+.twitter:hover{color:#32ccfe; text-shadow: 0px 1px 2px #000;}
+.youtube:hover{color:#aa0f09; text-shadow: 0px 1px 2px #000;}
+.gugleplus:hover{color:#ececec; text-shadow: 0px 1px 2px #000;}
+
+
+/* =============
+    Serwery
+   ============== */
+.serwery{padding: 10px}
+
+.serwery span{
+    border-radius: 1px;
+    background: #d7d7d7;
+    padding: 2px 10px;
+    color: #222;
+    font-family: SourceSansPro-ExtraLight;
+    clear: both;
+}
+.main2 section{
+    width: 49%;
+    background: #ebebeb;
+    color: #363636;
+    padding: 0;
+    margin-bottom: 10px;
+    border-bottom: solid 2px #d3d3d3;
+    line-height: 1.2;
+    float: left;
+    text-align: center;
+}
+.main2 section:nth-child(even){
+    float: right;
+}
+
+.main2 section h2{
+    font-size: 28px;
+    text-shadow:0px 3px 0px #7a7a7a;
+    color: #fff;
+    margin: 0;
+}
+.main2 section h3{
+    font-size: 20px;
+    color: #7a7a7a;
+    margin: 0;
+}
+.main2 hgroup{
+    background: #252525;
+    padding: 10px 0;
+    margin: 0;
+}
+.main2 section p{
+    margin: 0;
+    padding: 10px;
+}
+.online-color{color: #ec8104;}
+.offline-color{color: #7a7a7a;}
+
+.center{text-align: center;}
+/* =============
+    Kontakt
+   ============== */
+.contact{
+    padding: 15px;
+
+}
+
+.contact ul{
+    font-size: 25px;
+    font-family: SourceSansPro-Light;
+}
+.contact li{
+    margin-bottom: 10px;
+}
+
+.contact i{
+    margin-right: 2%;
+    /*TRANSFORMACJA*/
+    -moz-transition: 0.1s ease-in;  
+    -webkit-transition: 0.1s ease-in;  
+    -o-transition: 0.1s ease-in;  
+    transition: 0.1s ease-in; 
+}
+.contact i:hover{color: #ec8104;}
+
+.giegie{
+    font-family: SourceSansPro-Light;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 6px;
+}
+
+
+
+/* ==============
+    Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    /*TRANSFORMACJA*/
+    -moz-transition: 0.2s ease-in-out;  
+    -webkit-transition: 0.2s ease-in-out;  
+    -o-transition: 0.2s ease-in-out;  
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover,
+.active{
+    text-decoration: none;
+    background: #2b2b2b;
+    border-bottom: solid 6px #ec8104;
+}
+
+
+
+/* ==============
+   Main
+   ============== */
+
+.main, .main2 {padding: 15px 0;}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+    min-height: 100%; 
+}
+
+.wrapper2{
+    padding: 0 0px;
+}
+
+/* =============
+    Footer
+   ============== */
+
+.scrollup, .scrollup a{
+    text-align: center;
+    color: #252525;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+.footer-copyright {
+    background: #111111;
+    color: #fff;
+    font-family: SourceSansPro-ExtraLight;
+    clear: both;
+}
+
+.footer-copyright{ height: 60px; padding-top: 15px; color: #999999; font-size: 15px; }
+   
+.minenext a{ font-weight:bold; text-decoration: none; color: #dbdbdb;}
+.minenext b{ color: #ec8104; }
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+    nav a {
+        float: left;
+        width: 20%;
+        padding: 30px 1%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+.infobar{
+    display: none !important;
+    visibility: hidden;
+}
+.contact ul{
+    font-size: 17px;
+}
+
+.minenext, .copyright {text-align: center;}
+.social h1{color: #dbdbdb;}
+.social a{color: #555555;}
+
+.main2 section{
+    width: 100%;
+
+}
+
+
+
+}
+@media only screen and (min-width: 768px) {
+.minenext{text-align: center;}
+.copyright{text-align: center; }
+.copyright{float: left; }
+.minenext{text-align: right; }
+.title {float: left; }
+
+nav {float: right; width: 50%;}
+
+.max768{
+        display: none !important;
+        visibility: hidden;
+}
+
+
+}
+@media only screen and (max-width: 960px) {
+.slider,
+.kolumna,
+.newsimg{
+    display: none !important;
+    visibility: hidden;
+}
+.main, .main2{ padding: 0px 15px;}
+
+.dodano{
+    margin-top: -25px;
+    margin-bottom: -10px;
+    color: #595959;
+}
+.title2{
+    font-family: BebasNeue;
+    margin-top:20px;
+    font-size: 20px;
+    border-left: solid 3px #ec8104;
+}
+.odsun{
+    margin-left: 15px;
+}
+
+}
+
+@media only screen and (min-width: 960px) {  
+
+.kolumna{
+    width: 310px;
+    float: left;
+}
+.kolumna h2{
+    font-family: SourceSansPro-Bold;
+    text-align: center;
+    line-height: 0;
+    font-size: 22px;
+}
+.kolumna p{
+    font-size: 16px;
+    float: left;
+    line-height: 1.1;
+    margin-left: 25px;
+    margin-top: -5px;
+}
+
+.kolo {
+    max-width:100px;
+    margin: 0 auto;
+}
+.kolo:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #363636; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.kolo div {
+    float:left;
+    width:100%;
+    padding-top:25%;
+    text-align:center;
+    color:white;
+    /*TRANSFORMACJA*/
+    -moz-transition: 0.2s ease-in;  
+    -webkit-transition: 0.2s ease-in;  
+    -o-transition: 0.2s ease-in;  
+    transition: 0.2s ease-in; 
+}
+.kolo div:hover{
+    color:#ec8104;
+}
+
+.slider{
+    background-image: url('img/1.png');
+    background-position: center;
+    margin: 0 auto;
+    height: 301px;
+    min-width: 960px;
+    max-width: 1020px;
+}
+ 
+.main-container{
+    margin-top:-30px;
+    border-top: solid 6px #ec8104;
+    margin-bottom: 20px;
+    -webkit-box-shadow:  0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow:  0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+
+  }
+
+.main-container-page{
+    min-height: 600px;
+    margin-top: 10px;
+    border-top: solid 4px #616161;
+    margin-bottom: 20px;
+    -webkit-box-shadow:  0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow:  0px 3px 5px 2px rgba(0, 0, 0, 0.3);
+
+  }
+.main-container-page p{
+    padding: 15px;
+}
+.main-container-page h1, h2, h3, h4, h5{
+    padding: 0 15px;
+}
+
+.welcome{
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+}
+.welcome h2, h3{
+    font-family: SourceSansPro-ExtraLight;
+    font-size: 26px;
+}
+.welcome h1{
+    font-family: BebasNeue;
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+.rotator {
+    position:relative;
+    height:30px;
+}
+
+.rotator .item {
+    position:absolute;
+    right:0;
+    left:0;
+}
+.line3{
+    border-bottom: solid 1px #d3d3d3;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.line2{
+    border-bottom: solid 1px #fff;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.line1{
+    border-bottom: solid 2px #fff;
+    width: 280px;
+    margin: 0 auto;
+}
+.title2{
+    line-height: 0.1;
+    margin-left: 15px;
+    font-family: BebasNeue;
+    font-size: 25px;
+}
+.main article {
+    margin-left: 10px;
+}
+
+.main section{
+    width: 450px;
+    background: #ebebeb;
+    color: #363636;
+    padding: 1px 5px 5px 10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px #d3d3d3;
+    line-height: 1.2;
+    float: left;
+}
+.main section:nth-child(even){
+    float: right;
+}
+.main section h2{
+    margin-left: -15px;
+}
+
+.dodano{
+    color: #b5b5b5;
+    margin-top: -25px;
+    margin-bottom: -10px;
+    margin-left: 15px;
+}
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+}
+
+
+
+/* ==========================================================================
+   Klasy pomocnicze
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

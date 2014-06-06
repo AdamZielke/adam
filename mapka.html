@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <title>Adam Zielke</title>
+        <link rel="shortcut icon" href="css/img/favicon.ico" />
+        <meta name="description" content="Strona serwera MC oparta na szablonie MINEnEXT">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lte IE 7]>
+            <p class="chromeframe">Twoja przegladarka jest <strong>przestarzała</strong>. Musisz ją <a href="http://browsehappy.com/">zaktualizować</a> lub aktywować dodatek <a href="http://www.google.com/chromeframe/?redirect=true">Chrome Frame</a>...</p>
+        <![endif]-->
+        <!--[if lte IE 9]>
+            <p class="chromeframe">Twoja przeglądarka może mieć problemy z wyświetlaniem tej strony. Proponujemy ją <a href="http://browsehappy.com/">zmienić lub zaktualizować</a> do najnowszej wersji...</p>
+        <![endif]-->
+
+        <div id="up"></div> <!-- SCROLLER -->
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <a class="title" href="index.html"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="tabelki.html">TABELKI</a></li>
+                        <li><a class="active" href="mapka.html">MAPKA</a></li>
+                        <li><a href="kontakt.html">KONTAKT</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+        <div class="main-container-page">
+
+<!-- JAKIŚ CONTENT -->
+    <div class="main2 clearfix">
+        <div class="title2 main">Mapka</div>
+        
+			
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<STYLE type="text/css">
+
+#map { height: 600px; width: 100%; }
+
+</style>
+
+
+<div id="map"></div>
+
+
+<script>
+var map = L.map('map').setView([52.26816, 19.29199], 6);
+L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', { maxZoom: 18, id: 'examples.map-i86knfo3'}).addTo(map);
+
+for (var i = 1; i < localStorage.length; i=i+2)
+L.marker([localStorage.getItem(i),localStorage.getItem(i+1)]).bindPopup("Punkt: " + (i+1)/2).addTo(map);
+
+function onMapClick(e) {
+localStorage.setItem(localStorage.length+1, e.latlng.lat);
+localStorage.setItem(localStorage.length+1, e.latlng.lng);
+location.reload();}
+
+map.on('click', onMapClick);
+</script>
+        </div>
+    </div>
+
+<!-- KONIEC CONTENTU -->
+
+
+
+
+</div><!-- KONIEC main-container-page -->
+
+
+        <div class="footer-container">
+            <footer class="wrapper social">
+                    <h1>ZOSTAŃMY W KONTAKCIE</h1>
+                    <a href="#" class="skype"><i class="fa fa-skype fa-2x"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube-square fa-2x"></i></a>
+                    <a href="#" class="gugleplus"><i class="fa fa-google-plus-square fa-2x"></i></a>
+            </footer>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="scrollup"><a href="#up"><i class="fa fa-caret-square-o-up"></i></a></div>
+            <footer class="wrapper">
+                <div class="copyright">
+                
+                </div>
+                <div class="minenext">
+            
+                </div>
+             </footer>
+        </div>
+
+
+
+
+    </body>
+</html>
